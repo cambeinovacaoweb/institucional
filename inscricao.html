@@ -110,7 +110,6 @@
 <nav>
 <ul>
 
- <a href="chat.html">CHAT INTERATIVO</a> <span class="separator">|</span> 
  <a href="contatos.html">CONTATOS</a> <span class="separator">|</span>
  <a href="fotos.html">GALERIA DE FOTOS</a> <span class="separator">|</span>
  <a href="index.html">INSTITUCIONAL</a> <span class="separator">|</span>
@@ -129,6 +128,7 @@
 <center>
 
     <h1>FORMULÁRIO PARA INSCRIÇÃO</h1>
+    <b><p>INFORMAÇÃO TODOS OS CAMPOS DE PREENCHIMENTO SÃO OBRIGATÓRIOS.</p></b>
 
     <!--Esse form class é uma das partes essenciais para encaminhar os dados dos formulário-->
     <form class="contact-form" action="https://formsubmit.co/cambeinova@gmail.com" method="POST" autocomplete="off">
@@ -144,11 +144,18 @@
         </div>
 
         <div class="form-group">
-            <label for="phone">Telefone (com DDD):</label>
-            <input type="tel" id="phone" name="phone" required autocomplete="off" pattern="\([0-9]{2}\) [0-9]{4,5}-[0-9]{4}" placeholder="(XX) XXXXX-XXXX">
-        </div>
+            <label for="phone">Telefone (com DDD, apenas números):</label>
+            <input type="tel"
+                   id="phone"
+                   name="phone"
+                   required
+                   autocomplete="off"
+                   pattern="[0-9]{10,11}"
+                   placeholder="Ex: 43999999999"
+                   title="Digite apenas números. Ex: 43999999999">
+        </div>        
 
-    <div class="form-group">
+        <div class="form-group">
             <label for="faixaEtaria">Selecione a sua faixa etária:</label>
             <select id="faixaEtaria" name="faixaEtaria" autocomplete="off">
                 <option value="selecione">Selecione:</option>
@@ -202,20 +209,15 @@
         </div>
         
         <div class="form-group">
-            <label for="tipoCurso">Selecione o curso que deseja cursar:</label>
+            <label for="tipoCurso">Selecione o evento que deseja participar:</label>
             <select id="tipoCurso" name="tipoCurso" autocomplete="off">
+
                 <option value="selecione">Selecione:</option>
-                <option value="Curso A">Curso A</option>
-                <option value="Curso B">Curso B</option>
-                <option value="Curso C">Curso C</option>
-                <option value="Curso D">Curso D</option>
-                <option value="Curso E">Curso E</option>
-                <option value="Curso F">Curso F</option>
-                <option value="Curso G">Curso G</option>
-                <option value="Curso H">Curso H</option>
-                <option value="Curso I">Curso I</option>
-                <option value="Curso J">Curso J</option>
-                <option value="Curso K">Curso K</option>
+                <option value="Curso A">Trilha de Inovação</option>
+                <option value="Curso B">Hacktown</option>
+                <option value="Curso C">Innovation Week</option>
+                <option value="Curso D">Feira do Empreendedor 2025</option>
+
             </select>
         </div>
         

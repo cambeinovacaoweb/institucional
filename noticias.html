@@ -50,10 +50,17 @@
             font-size: 25px;
             text-align: justify;
         }
+        
         footer {
-            font-family: Geneva; /* Formatação padrão nota de rodapé */
+            font-family: Geneva;
             font-size: 14px;
             text-align: center;
+            padding: 10px;
+            background-color: #f0f0f0;
+        }
+
+        .content {
+            flex: 1; /* Faz o conteúdo crescer e empurra o footer para baixo, ou seja, separa o conteúdo principal do footer */
         }
 
         /* Início do código de estilização dos artigos */
@@ -104,7 +111,6 @@
     <nav>
     <ul>
 
-     <a href="chat.html">CHAT INTERATIVO</a> <span class="separator">|</span> 
      <a href="contatos.html">CONTATOS</a> <span class="separator">|</span>
      <a href="fotos.html">GALERIA DE FOTOS</a> <span class="separator">|</span>
      <a href="index.html">INSTITUCIONAL</a> <span class="separator">|</span> 
@@ -120,6 +126,7 @@
 
 <body>
 
+    <div class="content">
 <!--
     <div class="container">
 
@@ -152,18 +159,23 @@
     </div>
 
     <br>
+ Códigos criadados para abastecer novos campos de notícias-->
 
     <div class="container">
 
         <article class="article">
-            <h2>Artigo 2</h2>
-            <p>Este é o conteúdo do segundo artigo. Aqui você pode adicionar texto, imagens ou qualquer outro conteúdo relevante.</p>
+            <h2>Oportunidade para bolsista na área de Bolsa-Técnico Agente Regional de Inovação (ARI)</h2>
+            <p>Link com o edital:</p>
+
+            <a href="https://tinyurl.com/editalariuel" 
+                       style="color: blue; text-decoration: underline; cursor: pointer;" 
+                       target="_blank">
+                       https://tinyurl.com/editalariuel
+                    </a>
         </article>
 
-    Códigos criadados para abastecer novos campos de notícias-->
-
         <article class="article">
-            <h2>Programação da exposição no parque Ney Braga Londrina/2025.</h2>
+            <h2>Programação da exposição que agora do Ney Braga 2025.</h2>
             <p>Clique nos links abaixo para acessar:</p>
             <ul>
                 <li><a href="https://www.instagram.com/s/aGlnaGxpZ2h0OjE3OTA0Mjg2NjA4MTEwMzI0?story_media_id=3593201408728968597_294336277&igsh=d2dtbXE5MDJnN2hi" target="_blank">Acessar Instagram</a></li>
@@ -172,15 +184,17 @@
         </article>
 
     <br>
- 
-<i>    
+</div>
 
-  <footer>
-    Site em desenvolvimento por Juliano Zanoni acadêmcio do 5º semestre do curso de Engenharia de Software da Universidade Anhenguera para projeto de extensão acadêmico.
-  </footer>
- 
-</i>
 
+<i>
+
+    <footer>
+      Site em desenvolvimento por Juliano Zanoni acadêmcio do 5º semestre do curso de Engenharia de Software da Universidade Anhenguera para projeto de extensão acadêmico.
+    </footer>
+   
+  </i>
+    
 </body>
 
 
